@@ -1,9 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
-import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Home from "../pages/Home";
+import TodoListComponent from "../components/TodoList";
 
 const AppRouter = () => {
     return (
@@ -12,6 +13,8 @@ const AppRouter = () => {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/contact' element={<Contact/>}/>
+                {/* Test Routes */}
+                <Route path='/todo-list-component' element={<TodoListComponent/>}/>
             </Routes>
         </BrowserRouter>
     );
