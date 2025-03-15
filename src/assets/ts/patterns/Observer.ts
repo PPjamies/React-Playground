@@ -15,7 +15,7 @@ interface Subject {
 }
 
 class NewsletterSubscriber implements IdentifiableObserver {
-    private _id: String = uuidv4();
+    private _id: string = uuidv4();
 
     constructor(private name: string) {
     }
