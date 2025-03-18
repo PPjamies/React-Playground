@@ -15,6 +15,11 @@ const Home = () => {
                   className='max-w-40 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300 hover:text-black'>
                 <button type='button'>Like Button</button>
             </Link>
+
+            <Link to='/random-quote-generator'
+                  className='max-w-40 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300 hover:text-black'>
+                <button type='button'>Random Quote Generator</button>
+            </Link>
         </div>
     );
 }

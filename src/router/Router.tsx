@@ -6,6 +6,7 @@ import Contact from '../pages/Contact';
 import Home from "../pages/Home";
 import TodoListComponent from "../components/TodoList";
 import LikeButton from "../components/Buttons";
+import RandomQuoteGenerator from "../features/RandomQuoteGenerator";
 
 const AppRouter = () => {
     return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
                 {/* Test Routes */}
                 <Route path='/todo-list-component' element={<TodoListComponent/>}/>
                 <Route path='/like-button' element={<LikeButton/>}/>
+                <Route path='/random-quote-generator' element={<RandomQuoteGenerator/>}/>
             </Routes>
         </BrowserRouter>
     );
