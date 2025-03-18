@@ -5,6 +5,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Home from "../pages/Home";
 import TodoListComponent from "../components/TodoList";
+import LikeButton from "../components/Buttons";
 
 const AppRouter = () => {
     return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
                 <Route path='/contact' element={<Contact/>}/>
                 {/* Test Routes */}
                 <Route path='/todo-list-component' element={<TodoListComponent/>}/>
+                <Route path='/like-button' element={<LikeButton/>}/>
             </Routes>
         </BrowserRouter>
     );
