@@ -13,19 +13,17 @@ const LikeButton: React.FC<LikeButtonProps> = ({initialCount = 0}) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className='flex gap-2'>
-            <>
-                {!isHovered ? (
-                    <IconButton Icon={OutlineHeartIcon}
-                                onClick={() => setCount(count + 1)}
-                                styles='h-8 w-8 text-black transition-all duration-200'
-                    />
-                ) : (
-                    <IconButton Icon={SolidHeartIcon}
-                                onClick={() => setCount(count + 1)}
-                                styles='h-9 w-9 scale-110 text-red-500'
-                    />
-                )}
-            </>
+            {!isHovered ? (
+                <IconButton Icon={OutlineHeartIcon}
+                            onClick={() => setCount(count + 1)}
+                            styles='h-8 w-8 text-black transition-all duration-200'
+                />
+            ) : (
+                <IconButton Icon={SolidHeartIcon}
+                            onClick={() => setCount(count + 1)}
+                            styles='h-9 w-9 scale-110 text-red-500'
+                />
+            )}
             <div>{count}</div>
         </div>
     );
